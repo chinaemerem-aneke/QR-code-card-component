@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+
+    --br: .5em;
+}
+
+body {
+    display: flex;
+    font-size: 0.9375rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    background-color: var(--Light-gray);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 375px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    border-radius: 1em;
+    margin: auto;
+}
+
+.card__img {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 2.5% auto;
+    max-height: 350px;
+    border-radius: var(--br);
+}
+
+.bottom__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 1em;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+    /* border: 1px rebeccapurple solid; */
+
+}
+
+.title {
+    color: var(--Dark-blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: 20ch;
+    margin-bottom: 1em;
+    text-align: center;
+
+    /* border: 1px red solid; */
+}
+
+.text {
+    color: var(--Grayish-blue);
+    max-width: 25ch;
+    text-align: center;
+
+    /* border: 1px yellow solid; */
+}
+
+.attribute p {
+    font-size: .75em;
+    font-weight: 700;
+    color: var(--Grayish-blue);
+    text-align: center;
+    margin-top: 2em;
+}
+
+.attribute a {
+    color: rgb(72, 125, 209);
+    text-decoration: none;
+}
+
+.attribute a:hover {
+    text-decoration: underline;
+}
+
